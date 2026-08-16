@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ImgCap</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>ImgCap</h1>
+    <p class="subtitle">Bulk Image Extractor</p>
+  </header>
+
+  <div class="scroll-area">
+    <section class="card">
+      <label class="field">
+        <span>最小画像サイズ (px)</span>
+        <input type="number" id="minSize" value="0" min="0" />
+      </label>
+      <label class="field">
+        <span>並列ダウンロード数</span>
+        <input type="number" id="maxWorkers" value="6" min="1" max="20" />
+      </label>
+    </section>
+
+    <section class="card">
+      <p class="section-title">特殊画像取得</p>
+      <label class="check"><input type="checkbox" id="useCanvas" /> Canvas</label>
+      <label class="check"><input type="checkbox" id="useBlob" /> Blob URL</label>
+      <label class="check"><input type="checkbox" id="useScreenshot" /> img スクリーンショット</label>
+    </section>
+
+    <section class="card">
+      <p class="section-title">対象 URL</p>
+      <label class="check">
+        <input type="checkbox" id="useCurrentTab" checked />
+        現在のタブから取得
+      </label>
+      <div id="frameSelectWrap" class="hidden">
+        <label class="field">
+          <span>対象フレーム (iframeが見つかりました)</span>
+          <select id="frameSelect"></select>
+        </label>
+      </div>
+      <label class="field">
+        <span>または URL をカンマ区切りで入力</span>
+        <textarea id="urlList" rows="3" placeholder="https://example.com/page1, https://example.com/page2"></textarea>
+      </label>
+      <hr class="divider">
+      <p class="note">抽出後にプレビュー画面が開きます。ZIP保存はプレビュー画面上部の「ZIP保存」ボタンから行ってください。</p>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <button id="startBtn" class="primary">抽出開始</button>
+    <p id="status" class="status" aria-live="polite"></p>
+    <pre id="log" class="log hidden"></pre>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
