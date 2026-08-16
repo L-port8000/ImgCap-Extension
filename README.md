@@ -22,7 +22,7 @@
 
 ## 備考
 
-* 画像は **ダウンロードフォルダ/ImgCap/日時_ランダム/** 以下に保存されます。
+* 画像は ダウンロードフォルダ/ImgCap/日時_ランダム/ 以下に保存されます。
 * 取得には少し時間がかかります。
 
 ## ファイル構成
@@ -30,13 +30,13 @@
 ```
 chrome-extension/
 ├── manifest.json
-├── background/background.js   # ダウンロード orchestration
+├── background/background.js
 ├── content/
-│   ├── extractor-core.js      # 共通抽出ロジック
-│   ├── index.js               # ハンドラ解決・エントリ
+│   ├── extractor-core.js
+│   ├── index.js
 │   └── handlers/
 │       ├── default.js
-│       └── site-handlers.js   # pixiv / rawlazy
-├── popup/                     # UI
+│       └── site-handlers.js
+├── popup/
 └── icons/
 ```
