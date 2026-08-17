@@ -1,4 +1,4 @@
-# ImgCap Extension
+# ImgCap Extension ( for Chrome )
 
 ## 機能
 
