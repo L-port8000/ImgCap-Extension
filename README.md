@@ -7,14 +7,9 @@
 
 ## インストール方法
 
-1. Firefox で `about:debugging#/runtime/this-firefox` を開く
-2. 「一時的な拡張機能を読み込む…」(Load Temporary Add-on…) をクリック
-3. このフォルダ `ImgCap-Extension-firefox` 内の `manifest.json` を選択
-
-※ 一時的な拡張機能として読み込んだ場合、Firefox を終了すると無効になります。
-   恒久的に使いたい場合は、Firefox Developer Edition / Nightly / Unbranded Build で
-   `xpinstall.signatures.required = false` を設定して、本フォルダを ZIP 化して
-   `.xpi` 拡張子でインストールするか、公式署名済みのパッケージを入手してください。
+1. Firefox で `https://addons.mozilla.org/ja/firefox/addon/imgcap` を開く
+2. Firefoxへ追加をクリック
+3. ツールバーにピン留めをクリック
 
 ### 動作環境
 
