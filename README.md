@@ -7,10 +7,11 @@
 
 ## インストール方法
 
-1. Chrome で `chrome://extensions` を開く
-2. 右上の デベロッパーモード を ON
-3. パッケージ化されていない拡張機能を読み込むをおす
-4. このフォルダ `ImgCap-Extension-main` を選択
+1. [Releases](https://github.com/L-port8000/ImgCap-Extension/releases/tag/version)からLatestをダウンロード
+2. Chrome で `chrome://extensions` を開く
+3. 右上の デベロッパーモード を ON
+4. パッケージ化されていない拡張機能を読み込むをおす
+5. このフォルダ `ImgCap-Extension.zip` を選択
 
 ## 使い方
 
