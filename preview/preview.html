@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ImgCap Preview</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;color:#ccc;font-family:system-ui,-apple-system,sans-serif}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(0,0,0,.88);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:10px 20px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #333;flex-wrap:wrap}
+.topbar h1{font-size:15px;font-weight:600;color:#fff;white-space:nowrap}
+.topbar .count{font-size:13px;color:#888}
+.topbar .src{font-size:12px;color:#555;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:40vw}
+.topbar .spacer{flex:1}
+.save-btn{margin-left:auto;padding:7px 16px;border:none;border-radius:8px;background:#cba6f7;color:#1e1e2e;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.save-btn:hover{background:#b48ff0}
+.save-btn:disabled{background:#585b70;color:#a6adc8;cursor:default}
+.save-status{font-size:12px;color:#a6e3a1;white-space:nowrap}
+.save-status.error{color:#f38ba8}
+.gallery{display:flex;flex-direction:column;align-items:center;gap:4px;padding:20px 16px 40px}
+.gallery figure{max-width:100%;text-align:center}
+.gallery img{max-width:100%;height:auto;border-radius:6px;box-shadow:0 2px 12px rgba(0,0,0,.4)}
+.gallery figcaption{font-size:11px;color:#666;padding:6px 0 16px}
+.error{color:#f88;padding:40px;text-align:center;font-size:16px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <h1>ImgCap Preview</h1>
+  <span class="count" id="count"></span>
+  <span class="src" id="src"></span>
+  <span class="spacer"></span>
+  <span class="save-status" id="saveStatus"></span>
+  <button class="save-btn" id="saveZipBtn">ZIP保存</button>
+</div>
+<div class="gallery" id="gallery"></div>
+<script src="preview.js"></script>
+</body>
+</html>
