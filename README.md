@@ -1,5 +1,8 @@
 # ImgCap Extension ( for Chrome )
 
+[English](https://github.com/L-port8000/ImgCap-Extension/tree/chrome/README.en.md)
+[中国語(簡体)](https://github.com/L-port8000/ImgCap-Extension/tree/chrome/README.zh-CN.md)
+
 ## 機能
 
 - 現在のタブまたは[私のツール](https://site.l-ituki8000.workers.dev/tools/iframe.html)などのiframe項目からURL リストから画像を一括抽出
